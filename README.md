@@ -15,7 +15,6 @@ The project examines Russia’s *critical patriot* Telegram ecosystem — a fact
 │   ├── Fine_Tune_RuBERT_Criticism.py           # Fine-tunes the RuBERT model using the manually coded criticism dataset
 │   ├── Frame_Frequency_Analysis.py             # Identifies and counts occurrences of discursive frames across messages
 │   ├── Network_Analysis.py                     # Constructs and analyzes the inter-channel repost network (weighted, directed)
-│   └── utils/                                  # Helper functions, logging, and configuration templates
 │
 ├──📊 data/                                     # Processed datasets and intermediate analytical outputs
 │   ├── Channels_List.csv                       # Metadata for all sampled channels (ID, label, subscriber count, cluster)
