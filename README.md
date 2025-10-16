@@ -102,7 +102,7 @@ Outputs are automatically exported to the `/outputs` directory for replication a
 
 **Input:**  
 - Pre-processed message corpus from PostgreSQL (retrieved via `Telegram_Data_Collection.py`)  
-- Linguistic resources defined in [`documents/CODEBOOK.md`](docs/CODEBOOK.md)  
+- Linguistic resources defined in [`docs/CODEBOOK.md`](docs/05_CODEBOOK.md)  
 - Manually annotated subset: [`data/Training_Dataset.csv`](data/Training_Dataset.csv)
 
 **Procedure:**  
@@ -145,7 +145,7 @@ Each message in the training corpus was hand-coded according to the following cr
 
 
 A detailed description of the RuBERT architecture, fine-tuning parameters, and evaluation procedure is available in  
-[`documents/Model_Description_ruBERT.md`](docs/Model_Description_ruBERT.md).
+[`documents/Model_Description_ruBERT.md`](docs/04_ruBERT-Criticism-of-Authorities_Classifier.md).
 
 **Output:**   
 - Fine-tuned RuBERT model weights and evaluation metrics (accuracy, F1-score)  
@@ -156,7 +156,7 @@ A detailed description of the RuBERT architecture, fine-tuning parameters, and e
 
 **Input:**  
 - [`code/Frame_Frequency_Analysis.py`](code/Frame_Frequency_Analysis.py) — Python script implementing keyword-based frame detection and aggregation  
-- [`documents/CODEBOOK.md`](docs/CODEBOOK.md) — full lexicon of framing categories and associated keyword sets  
+- [`documents/CODEBOOK.md`](docs/05_CODEBOOK.md) — full lexicon of framing categories and associated keyword sets  
 - PostgreSQL database (`telegram_data` table) containing message text, cluster labels, and timestamps  
 
 **Procedure:**  
@@ -193,12 +193,12 @@ understand, evaluate, and adapt the analytical framework used in the study.
 
 Due to ethical considerations and privacy risks associated with Telegram user-generated content,  
 the **raw message-level dataset is not publicly released**.  
-For details, see [`documents/Harm_Reduction.md`](docs/Harm_Reduction.md).
+For details, see [`documents/Harm_Reduction.md`](docs/02_Harm_Reduction.md).
 
 Researchers interested in reproducing specific components of the pipeline (e.g., network construction,  
 frame analysis, or model fine-tuning) can use the provided scripts with their own Telegram datasets  
 collected under the same methodological constraints and selection criteria  
-(see [`documents/Sampling_Procedure.md`](docs/Sampling_Procedure.md)).
+(see [`documents/Sampling_Procedure.md`](docs/03_Sampling_Procedure.md)).
 
 For academic inquiries or collaboration requests, please contact:
 
