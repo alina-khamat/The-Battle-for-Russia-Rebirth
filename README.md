@@ -46,7 +46,7 @@ The project examines Russia’s *critical patriot* Telegram ecosystem — a fact
 Channel identification followed an **Exponential Discriminative Snowball Sampling (EDSS)** approach, detailed in  [`documents/Sampling_Procedure.md`](docs/Sampling_Procedure.md).  
 
 Network expansion proceeded iteratively based on **repost ties**, adding new channels if they had been forwarded or mentioned **≥5 times** in R1 or  **≥10 times** in R2 by existing nodes since **February 24, 2022** to **September 1, 2024**.  
-Each iteration was followed by **manual filtering ** to remove irrelevant  channels. An example of this filtering stage is provided in  [`data/Sampling_Manual_Filtering_R1_Example.csv`](data/Sampling_Manual_Filtering_R1_Example.csv).  
+Each iteration was followed by **manual filtering** to remove irrelevant  channels. An example of this filtering stage is provided in  [`data/Sampling_Manual_Filtering_R1_Example.csv`](data/Sampling_Manual_Filtering_R1_Example.csv).  
 
 All messages and metadata were collected through the **Telegram API** via the custom Python script [`code/Telegram_Data_Collection.py`](code/Telegram_Data_Collection.py),  which saved message text, timestamps, and repost relations into a PostgreSQL database.  
 
